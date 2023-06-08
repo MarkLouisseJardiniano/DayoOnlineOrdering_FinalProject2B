@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+        <!--navbar-->
+        <header>
+            <nav>
+            <a href="#" class="logo">
+                <img src="images/logo.jpg" alt="">
+               
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        
+            <ul >
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="reservation.html">RESERVATION</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <body>
+        
+          <div class="delivery-form">
+  <h2>Delivery Form</h2>
+  <form action="#">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <ul>
+                            <img src="images/logo-.png" alt="">
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h6>company</h6>
+                        <ul>
+                            <li><a href="aboutus.html">about us</a></li>
+                            <li><a href="accessibility.html">Accessibility</a></li>
+                            <li><a href="privacy.html">privacy policy</a></li>
+                            <li><a href="condition.html">Condition of Use</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h6>get help</h6>
+                        <ul>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="location.html">delivery</a></li>
+                            <li><a href="reservation.html">reservations</a></li>
+                            <li><a href="franchising.html">Franchising</a></li>
+                            <li><a href="member.html">Group Members</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h6>follow us</h6>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </footer>
+        
+
+
+    
+    
+        <!-- link script -->
+        <script>
+
+const containers = document.getElementById('containers')
+const overlayCon = document.getElementById('overlayCon')
+const overlayBtn = document.getElementById('overlayBtn')
+
+overlayBtn.addEventListener('click', () => {
+    containers.classList.toggle('right-panel-active');
+
+    overlayBtn.classList.remove('btnScaled');
+    window.requestAnimationFrame( ()=> {
+        overlayBtn.classList.add('btnScaled');
+    })
+});
+
+        </script>
+</body>
+</html>
