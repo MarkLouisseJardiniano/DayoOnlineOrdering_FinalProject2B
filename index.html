@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -40,14 +41,18 @@
         </div>
     </section>
     <!--heading-->
-    <section class="heading" id="heading">
+    <div class="heading" id="heading" data-aos-duration="50" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="menu-heading">
             <h3>FEATURED MENU</h3>
         </div>
-    </section>
+    </div>
     <!--menu-->
-    <section class="menu" id="menu">
-        <div class="menu-item">
+    <div class="menu" id="menu"  data-aos-duration="600" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+
+        <div class="menu-item" >
+            
             <h1>Pizza</h1>
             <p>No meat, less guilt, overloaded goodness with 5 different kinds of cheeses, creamy pesto and roasted mushrooms</p>
             <img src="images/img2.webp" alt="">
@@ -62,16 +67,17 @@
             <p>These nachos are healthy, boasting plenty of folate, fibre and vitamin c</p>
             <img src="images/no-bg-nac.png" alt="">
         </div>
-    </section>
+    </div>
     <!--orderbtn-->
-    <section class="order" id="order">
+    <div class="order" id="order"  data-aos-duration="200" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <div class="order-btn">
             <button onclick="orderpage()" id="orderbtn">Order Now</button>
         </div>
-    </section>
+    </div>
     <!--about-->
     <section class="about" id="about">
-    <div class="aboutmain">
+    <div class="aboutmain"  data-aos="fade-right">
         <img src="images/about.jpg" alt="">
     <div class="about-text">
         <h5>About Us</h5>
@@ -81,28 +87,29 @@
 </section>
 
 <div class="gal">   
-    <div class="gallery-" id="gallery">
+    <div class="gallery-" id="gallery" data-aos-duration="50" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
         <h5>Gallery</h5>
     </div>
 </div>
-    <div class="gal-">
+    <div class="gal-" >
     <div class="gallery" id="gallery">
-            <img src="images/gal1.jpg" alt="">
+            <img src="images/gal1.jpg" alt="" data-aos="zoom-in">
     </div>
     <div class="gallery" id="gallery">
-        <img src="images/gal2.jpg" alt="">
+        <img src="images/gal2.jpg" alt="" data-aos="zoom-in">
 </div>
  <div class="gallery" id="gallery">
-            <img src="images/gal3.jpg" alt="">
+            <img src="images/gal3.jpg" alt="" data-aos="zoom-in">
     </div>
      <div class="gallery" id="gallery">
-            <img src="images/gal4.jpg" alt="">
+            <img src="images/gal4.jpg" alt="" data-aos="zoom-in">
     </div>
      <div class="gallery" id="gallery">
-            <img src="images/about.jpg" alt="">
+            <img src="images/about.jpg" alt="" data-aos="zoom-in">
     </div>
     <div class="gallery" id="gallery">
-        <img src="images/bg.jpg" alt="">
+        <img src="images/bg.jpg" alt="" data-aos="zoom-in">
 </div>
 
 </div>
@@ -170,6 +177,10 @@ document.addEventListener('click', function(event) {
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
         <!--navbar-->
@@ -42,8 +43,9 @@
         </div>
       </section>
       <!--item-->
-      <section class="food-item" id="food-item">
-      <div class="food-items musttry-item">
+      <section class="food-item" id="food-item" data-aos-duration="600" data-aos="fade-up"
+      data-aos-anchor-placement="top-center" >
+      <div class="food-items musttry-item"  >
           <img src="images/chi.png" alt="">
           <h1>CHICKEN BURGERS</h1>
           <p>₱ 120.00</p>
@@ -208,7 +210,7 @@
         <p>₱ 80.00</p>
         <button type="button"  onclick="delivery()"id="now-btn">Order Now</button>
     </div>
-    <div class="food-items pizza-item">
+    <div class="food-items pizza-item" >
         <img src="images/image (1).webp" alt="">
         <h1>Roast Beef & Cream Cheese Overload</h1>
         <p>₱ 386.00</p>
@@ -221,7 +223,11 @@
 
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="main.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
         <script>
             function delivery(){
